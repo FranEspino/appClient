@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Moto" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primarDark</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <!-- Rised Button -->
+    <style name="RaisedButtom" parent="Theme.AppCompat.Light">
+
+        <!-- First -->
+        <item name="colorButtonNormal">#3FCEEE</item>
+        <!-- Second -->
+        <item name="colorControlHighlight">@color/primarDark</item>
+        <!-- Third -->
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+    <!-- Change Color appearance in the hint -->
+    <style name="EditTextWhite" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+
+    </style>
+
+    <style name="EditTextBlack" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/black</item>
+
+    </style>
+
+</resources>

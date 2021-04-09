@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="primaryColor">#0d73ed</color>
+    <color name="primarDark">#0049ba</color>
+    <color name="primaryLight">#67a1ff</color>
+    <color name="alpha_canal">#53292929</color>
+
+</resources>

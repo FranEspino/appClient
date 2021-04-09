@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/white"
+tools:context=".SolicitudDetalleActivity">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Toolbar
+            android:id="@+id/toolbarRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nueva Solicitud"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+        </Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/menu_background"
+        >
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/new_request"
+            android:layout_marginBottom="8dp"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="13dp"
+        android:gravity="center"
+
+        android:text="Porfavor activa tu gps, eso ayudará a nuestros operadores llegar más rápido a tu destino"
+        android:textColor="@color/black" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+
+            >
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditTextBlack"
+                android:layout_marginTop="20dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/username_register"
+                    android:drawablePadding="@dimen/padding_drawable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre y apellido"
+                    android:inputType="textPersonName"
+                    android:textSize="16dp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditTextBlack"
+                android:layout_marginTop="@dimen/et_mt_login"
+
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email_register"
+                    android:textSize="16dp"
+                    android:layout_width="match_parent"
+                    android:drawablePadding="@dimen/padding_drawable"
+                    android:layout_height="wrap_content"
+                    android:hint="Numero telefonico"
+                    android:inputType="number"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                >
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    tools:context=".UbicationActivity">
+
+                </fragment>
+
+                <Button
+                    android:id="@+id/btn_getLocation"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/RaisedButtom"
+                    android:text="Obtener "
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:background="@drawable/btn_round"
+                    android:textColor="@color/white"
+                    android:paddingLeft="15dp"
+                    android:drawableLeft="@drawable/ic_ubicacion"
+                    />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditTextBlack"
+                    android:layout_marginTop="@dimen/et_mt_login"
+
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/direccion"
+                        android:textSize="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/padding_drawable"
+                        android:hint="Dirección"
+                        android:inputType="text"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Enviar"
+                android:theme="@style/RaisedButtom" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

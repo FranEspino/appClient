@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SolicitudDetalleActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <Toolbar
+                android:id="@+id/toolbarRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nueva Solicitud"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    />
+            </Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/menu_background"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/new_request"
+                />
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp"
+
+                >
+                <TextView
+                    android:padding="8dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:gravity="center"
+                    android:text="Completa todos tus datos y nuestros operadores irán en seguida."
+                    android:textColor="@color/black" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditTextBlack"
+                    android:layout_marginTop="20dp"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/username_register"
+                        android:drawablePadding="@dimen/padding_drawable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nombre y apellido"
+                        android:inputType="textPersonName"
+                        android:textSize="16dp"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditTextBlack"
+                    android:layout_marginTop="@dimen/et_mt_login"
+
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/email_register"
+                        android:textSize="16dp"
+                        android:layout_width="match_parent"
+                        android:drawablePadding="@dimen/padding_drawable"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_create_email_user"
+                        android:text="Numero telefónico"
+                        android:inputType="number"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditTextBlack"
+                    android:layout_marginTop="@dimen/et_mt_login"
+
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/password_register1"
+                        android:textSize="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/padding_drawable"
+                        android:hint="Dirección"
+                        android:inputType="text"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/text_button_account"
+                    android:theme="@style/RaisedButtom" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
