@@ -7,5 +7,11 @@
     <color name="primarDark">#0049ba</color>
     <color name="primaryLight">#67a1ff</color>
     <color name="alpha_canal">#53292929</color>
+    <style name="TimePicker" parent="android:Theme.Material.Light.Dialog">
+        <item name="android:colorAccent">#0d73ed</item>
+    </style>
+    <style name="date_picker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:colorAccent">#0d73ed</item>
 
+    </style>
 </resources>

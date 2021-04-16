@@ -17,6 +17,12 @@ class MenuActivity : AppCompatActivity() {
             startActivity(intento1)
         }
 
+        val item_menu_reservar = findViewById<LinearLayout>(R.id.ly_reservar)
+        item_menu_reservar.setOnClickListener {
+            val intento1 = Intent(this, ReservaActivity::class.java)
+            startActivity(intento1)
+        }
+
         val item_menu_solicitar = findViewById<LinearLayout>(R.id.ly_solicitar)
         item_menu_solicitar.setOnClickListener {
             val intento1 = Intent(this, UbicationActivity::class.java)

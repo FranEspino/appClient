@@ -14,7 +14,7 @@
     <style name="RaisedButtom" parent="Theme.AppCompat.Light">
 
         <!-- First -->
-        <item name="colorButtonNormal">#3FCEEE</item>
+        <item name="colorButtonNormal">@color/primaryColor</item>
         <!-- Second -->
         <item name="colorControlHighlight">@color/primarDark</item>
         <!-- Third -->

@@ -63,7 +63,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/ly_about"
+                android:id="@+id/ly_reservar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -186,7 +186,6 @@
                         android:background="@drawable/border_item_menu"
                         android:padding="8dp"
                         android:src="@drawable/ic_envio" />
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

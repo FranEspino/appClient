@@ -5,5 +5,185 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ReservaActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <Toolbar
+                android:id="@+id/toolbarRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reservas"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    />
+            </Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp"
+                >
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditTextBlack">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/username_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/padding_drawable"
+                        android:hint="Numero telefonico"
+                        android:inputType="phone"
+                        android:textSize="16dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditTextBlack">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/referencia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/padding_drawable"
+                        android:hint="¿Donde te recogemos?"
+                        android:inputType="text"
+                        android:textSize="16dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditTextBlack">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/destino"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/padding_drawable"
+                        android:hint="¿A donde te llevaremos?"
+                        android:inputType="text"
+                        android:textSize="16dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/EditTextBlack">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/date"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5px"
+                            android:layout_marginRight="50px"
+                            android:drawablePadding="@dimen/padding_drawable"
+                            android:hint="Fecha"
+                            android:inputType="date"
+                            android:textSize="16dp" />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/btn_fecha"
+                        android:layout_width="110dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/btn_round"
+                        android:drawableLeft="@drawable/ic_fecha"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:text="Fecha "
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/EditTextBlack">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/time"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="50px"
+                            android:drawablePadding="@dimen/padding_drawable"
+                            android:hint="Hora"
+                            android:inputType="time"
+                            android:textSize="16dp"
+
+                            />
+
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/btn_hora"
+                        android:layout_width="110dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/btn_round"
+                        android:drawableLeft="@drawable/ic_reloj"
+                        android:gravity="center"
+                        android:paddingLeft="18dp"
+                        android:text="Hora "
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Reservar"
+                    android:theme="@style/RaisedButtom" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
