@@ -29,5 +29,11 @@ class MenuActivity : AppCompatActivity() {
             startActivity(intento1)
         }
 
+        val item_menu_encargos = findViewById<LinearLayout>(R.id.ly_encargos)
+        item_menu_encargos.setOnClickListener {
+            val intento1 = Intent(this, PruebaActivity::class.java)
+            startActivity(intento1)
+        }
+
     }
 }

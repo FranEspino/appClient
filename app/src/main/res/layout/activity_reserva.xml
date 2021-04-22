@@ -89,7 +89,6 @@
                         android:hint="¿A donde te llevaremos?"
                         android:inputType="text"
                         android:textSize="16dp" />
-
                 </com.google.android.material.textfield.TextInputLayout>
 
 
